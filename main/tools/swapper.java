@@ -22,14 +22,15 @@ class Main
     	}
 		}
 
-	public static ArrayList swap (String word) {
+	public static String swap (String word) {
     	ArrayList<String> charList = new ArrayList<String>();
     	for (int i=0; i<word.length(); i++) {
         	String strElem = Character.toString(word.charAt(i));
         	charList.add(strElem);
     	}
     	shuffle(charList);
-    	return charList;
+    	String swappedword = String.join("", charList);
+    	return swappedword;
 	}
 
 	public static void main(String[] args)
