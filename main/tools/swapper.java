@@ -25,7 +25,7 @@ class Main
 	public static ArrayList swap (String word) {
     	ArrayList<String> charList = new ArrayList<String>();
     	for (int i=0; i<word.length(); i++) {
-        	String strElem = Character.toString(charAt(i));
+        	String strElem = Character.toString(word.charAt(i));
         	charList.add(strElem);
     	}
     	shuffle(charList);
