@@ -54,9 +54,4 @@ class Swapper
 		}
 		return swappedword;
 	}
-
-	public static void main(String[] args)
-	{
-		System.out.println(swap("bonjour"));
-	}
 }
