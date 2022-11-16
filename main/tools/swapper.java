@@ -1,9 +1,11 @@
+package main.tools;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-class Main
+class Swapper
 {
 	// Generic method to randomize a list in Java using Fisher–Yates shuffle
 	public static<T> void shuffle(List<T> list){
@@ -31,10 +33,5 @@ class Main
     	shuffle(charList);
     	String swappedword = String.join("", charList);
     	return swappedword;
-	}
-
-	public static void main(String[] args)
-	{
-		System.out.println(swap("bonjour"));
 	}
 }
