@@ -40,8 +40,8 @@ class Swapper
 				idem++; // Nb of same letters
 			}
 		}
-		percent = idem/(word.length()*100); // Percent of similarity between word and swapped word
-		while (percent>=10 || word.charAt(0) == swappedword.charAt(0)){ // Remix until similarty low enough and first letter different
+		percent = idem/(word.length()*100); // Percentage of similarity between word and swapped word
+		while (percent>=10 || word.charAt(0) == swappedword.charAt(0)){ // Remix until similarty percentage low enough and first letter different
 			shuffle(charList);
 			swappedword = String.join("", charList);
 			for (int j=0; j<word.length(); j++) {
