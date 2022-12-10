@@ -1,5 +1,6 @@
 package main.tools;
 
+import java.security.Principal;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -53,5 +54,11 @@ class Swapper
 
 		}
 		return swappedword;
+	}
+	
+	public static void main(String[] args)
+	{
+		System.out.println(swap("france"));
+		System.out.println(swap("angleterre"));
 	}
 }
